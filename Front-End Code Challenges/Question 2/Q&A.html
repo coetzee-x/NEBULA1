@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Front-End Code Challenge</title>
+</head>
+
+<body>
+
+    <p><b><u>Question 2.1</u></b></p>
+    <p>Why will the following function return true?</p>
+    <code>function compareIt(num1, num2){
+        return num1 == num2;
+    }
+    </code>
+    <p><b><u>Answer 2.1</u></b></p>
+    <p>Becuase when '==' is used to compare two values, the data type is <b>ignored</b>.</p>
+
+    <p><b><u>Question 2.2</u></b></p>
+    <p>How could one change this function so that the data types are checked as well as values?</p>
+    <p><b><u>Answer 2.2</u></b></p>
+    <code>
+        function compareIt(num1, num2){
+            return num1 === num2;
+        }
+    </code>
+
+    <p><b><u>Example:</u></b></p>
+    <p>Comparing a string value with an int.</p>
+    <label>String Value:</label>
+    <input id="val1" type="text" value="235"/>
+    <label>Integer Value:</label>
+    <input id="val2" type="number" value="235"/>
+    <input type="button" onclick="compareIt(false)" value="Compare with ==" />
+    <input type="button" onclick="compareIt(true)" value="Compare with ===" />
+    <div id="result"></div>
+    <script>
+
+        compareIt(false);
+
+        function compareIt(strict) {
+            var val1 = document.getElementById("val1").value;
+            var val2 = document.getElementById("val2").value;
+            var element = document.getElementById("result");
+            if (!strict)
+                element.innerText = "Result: " + (val1 == parseInt(val2));
+            else
+                element.innerText = "Result: " + (val1 === parseInt(val2));
+        }
+
+    </script>
+</body>
+
+</html>

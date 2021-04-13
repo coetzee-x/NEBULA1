@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Font-End Code Challenge</title>
+    </head>
+    <body>
+
+        <div class="red">asdasdasd</div>
+
+        <p><b><u>Question 1.1</u></b></p>
+        <p>What will the colour of both div elements be?</p>
+        <p><b><u>Answer 1.1</u></b></p>
+        <ul>
+            <li>The div with id firstDiv will have a background of <span style="background: red;">red.</span></li>
+            <li>The div with id secondDiv will have a background of <span style="background: orange;">orange.</span></li>
+        </ul>
+        <p><b><u>Question 1.2</u></b></p>
+        <p>How would you dynamically target firstDiv and make it's colour pink? (provide code snippet).</p>
+        <p><b><u>Answer 1.2</u></b></p>
+        <code>
+            document.getElementsByTagName("body")[0].children[0].style.background = "pink";
+        </code>
+        <p><b><u>Question 1.3</u></b></p>
+        <p>How would you dynamically target the secondDiv and add the yellow-card class to its class list? (provide code snippet).</p>
+        <p><b><u>Answer 1.3</u></b></p>
+        <code>
+            document.getElementsByTagName("body")[0].children[1].classList.add("yellow-card"); 
+        </code>
+    </body>
+</html>

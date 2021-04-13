@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Front-End Code Challenge</title>
+    </head>
+    <body>
+        <p><b><u>Question 3.1</u></b></p>
+        <p>How would you make a web page mobile friendly (ie responsive)?</p>
+        <p><b><u>Answer 3.1</u></b></p>
+        <p>There are many out of the box libraries/frameworks that can be used for this purpose:</p>
+        <ul>
+            <li>Bootstrap.</li>
+            <li>Materialize.</li>
+            <li>jQuery Mobile.</li>
+        </ul>
+        <p>Otherwise, media queries can be used for, example:</p>
+        <code>
+            @media only screen and (max-width: 680px){
+                body{
+                    background-color: red;
+                }
+            }
+        </code>
+        <p><b><u>Question 3.2</u></b></p>
+        <p>What is the benefit of bundling .js scripts into one file?</p>
+        <p><b><u>Answer 3.2</u></b></p>
+        <ul>
+            <li>Smaller file sizes for the browser to download.</li>
+            <li>Less files for the browser to download.</li>
+            <li>Allows for module-based development.</li>
+        </ul>
+        <p><b><u>Question 3.3</u></b></p>
+        <p>What needs to be done to ensure the browser understands Sass styling?</p>
+        <p><b><u>Answer 3.3</u></b></p>
+        <p>Once a Sass file is compiled, it gets converted into a Css file that the browser understands. If the Sass file is linked to the HTML page, the styling
+            will not work. The HTML page needs to link the generated Css file.
+        </p>
+        <p><b><u>Question 3.4</u></b></p>
+        <p>What should be done to ensure brower compatibility with newer flavours of JavaScript like ES6/7</p>
+        <p><b><u>Answer 3.4</u></b></p>
+        <ul>
+            <li>Make use of transpiling libraries such as Babel (converts new JavaScript into old JavaScript).</li>
+            <li>Do research on what browsers are most commonly used.</li>
+            <li>Use JavaScript frameworks/libraries that's cross browser compatible.</li>
+            <li>Test your code on older/newer browser versions.</li>
+        </ul>
+    </body>
+</html>
